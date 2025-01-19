@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaosDex Manifest Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .color-inputs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .color-preview {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ddd;
+            margin-left: 10px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .preview-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .download-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 0.9em;
+        }
+
+        #preview-image {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+
+        .required::after {
+            content: " *";
+            color: red;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            margin-left: 5px;
+            cursor: help;
+        }
+
+        .tooltip::after {
+            content: "?";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-color: #666;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .tooltip:hover::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px;
+            background-color: #333;
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ChaosDex Manifest Generator</h1>
+        
+        <form id="manifestForm">
+            <div class="form-group">
+                <label class="required">Identifier
+                    <span class="tooltip" data-tooltip="Lowercase English letters only, no numbers or special characters"></span>
+                </label>
+                <input type="text" id="identifier" pattern="[a-z]+" required>
+                <div class="error" id="identifier-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Ability Name</label>
+                <input type="text" id="ability_name" required>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Ability Description</label>
+                <textarea id="ability_description" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Ability Long Description
+                    <span class="tooltip" data-tooltip="Detailed description that will be fed to the battle generating AI"></span>
+                </label>
+                <textarea id="ability_long_description" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Health</label>
+                <input type="number" id="health" required min="1">
+            </div>
+
+            <div class="form-group">
+                <label class="required">Attack</label>
+                <input type="number" id="attack" required min="1">
+            </div>
+
+            <div class="form-group">
+                <label>Credits Line 1</label>
+                <input type="text" id="credits1" placeholder="Idea by Example">
+            </div>
+
+            <div class="form-group">
+                <label>Credits Line 2</label>
+                <input type="text" id="credits2" placeholder="Artwork by Example, Example2">
+            </div>
+
+            <div class="form-group">
+                <label>Background Color
+                    <span class="tooltip" data-tooltip="Click to choose background color"></span>
+                </label>
+                <div id="bg-color-picker"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Border Color
+                    <span class="tooltip" data-tooltip="Click to choose border color"></span>
+                </label>
+                <div id="border-color-picker"></div>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Artwork</label>
+                <input type="file" id="artwork" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label class="required">Spawn Art</label>
+                <input type="file" id="spawn_art" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label>Health Icon (optional)</label>
+                <input type="file" id="health_icon" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label>Attack Icon (optional)</label>
+                <input type="file" id="attack_icon" accept="image/*">
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="preview-btn" onclick="generatePreview()">Preview Card</button>
+                <button type="button" class="download-btn" onclick="downloadFiles()">Download Files</button>
+            </div>
+        </form>
+
+        <div id="preview-container">
+            <img id="preview-image" style="display: none;">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+        function validateIdentifier() {
+            const identifier = document.getElementById('identifier');
+            const error = document.getElementById('identifier-error');
+            const isValid = /^[a-z]+$/.test(identifier.value);
+            
+            if (!isValid && identifier.value !== '') {
+                error.textContent = 'Identifier must contain only lowercase English letters';
+                return false;
+            }
+            error.textContent = '';
+            return true;
+        }
+
+        function updateColorPreview() {
+            const bgInputs = document.querySelectorAll('.bg-color');
+            const borderInputs = document.querySelectorAll('.border-color');
+            
+            const bgColor = Array.from(bgInputs).map(input => input.value);
+            const borderColor = Array.from(borderInputs).map(input => input.value);
+            
+            document.getElementById('bg-color-preview').style.backgroundColor = 
+                `rgba(${bgColor.join(',')})`;
+            document.getElementById('border-color-preview').style.backgroundColor = 
+                `rgba(${borderColor.join(',')})`;
+        }
+
+        function generateManifest() {
+            const bgColor = Array.from(document.querySelectorAll('.bg-color'))
+                .map(input => parseInt(input.value));
+            const borderColor = Array.from(document.querySelectorAll('.border-color'))
+                .map(input => parseInt(input.value));
+
+            return {
+                identifier: document.getElementById('identifier').value,
+                name: document.getElementById('name').value,
+                ability_name: document.getElementById('ability_name').value,
+                ability_description: document.getElementById('ability_description').value,
+                ability_long_description: document.getElementById('ability_long_description').value,
+                health: parseInt(document.getElementById('health').value),
+                attack: parseInt(document.getElementById('attack').value),
+                credits: `${document.getElementById('credits1').value}\n${document.getElementById('credits2').value}`,
+                background_color: bgPickr.getColor().toRGBA().map(x => 
+                    x < 1 ? Math.round(x * 255) : Math.round(x)),
+                border_color: borderPickr.getColor().toRGBA().map(x => 
+                    x < 1 ? Math.round(x * 255) : Math.round(x)),
+                artwork: `${document.getElementById('identifier').value}/artwork.png`,
+                spawn_art: `${document.getElementById('identifier').value}/spawn_art.png`,
+                health_icon: document.getElementById('health_icon').files.length ? 
+                    `${document.getElementById('identifier').value}/health.png` : 0,
+                attack_icon: document.getElementById('attack_icon').files.length ? 
+                    `${document.getElementById('identifier').value}/sword.png` : 0
+            };
+        }
+
+        async function generatePreview() {
+            if (!validateIdentifier()) return;
+            
+            const manifest = generateManifest();
+            
+            // Create FormData object
+            const formData = new FormData();
+            
+            // Add manifest JSON
+            formData.append('manifest', JSON.stringify(manifest));
+            
+            // Add files if they exist
+            const artworkFile = document.getElementById('artwork').files[0];
+            const spawnArtFile = document.getElementById('spawn_art').files[0];
+            const healthIconFile = document.getElementById('health_icon').files[0];
+            const attackIconFile = document.getElementById('attack_icon').files[0];
+            
+            if (artworkFile) formData.append('artwork', artworkFile);
+            if (spawnArtFile) formData.append('spawn_art', spawnArtFile);
+            if (healthIconFile) formData.append('health_icon', healthIconFile);
+            if (attackIconFile) formData.append('attack_icon', attackIconFile);
+            
+            try {
+                const response = await fetch('https://chaos-dex-api.vercel.app/api/generate-preview', {
+                    method: 'POST',
+                    body: formData // No need to set Content-Type header, browser will set it automatically
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const previewUrl = await response.json();
+                const previewImage = document.getElementById('preview-image');
+                previewImage.src = previewUrl;
+                previewImage.style.display = 'block';
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to generate preview: ' + error.message);
+            }
+        }
+
+        async function downloadFiles() {
+            if (!validateIdentifier()) return;
+            
+            // Create a new ZIP file
+            const zip = new JSZip();
+            
+            // Add manifest.json
+            const manifest = generateManifest();
+            const manifestJson = JSON.stringify(manifest, null, 4);
+            zip.file("manifest.json", manifestJson);
+            
+            // Function to read file as ArrayBuffer
+            const readFileAsArrayBuffer = (file) => {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => resolve(e.target.result);
+                    reader.onerror = (e) => reject(e);
+                    reader.readAsArrayBuffer(file);
+                });
+            };
+            
+            // Add artwork files
+            const identifier = document.getElementById('identifier').value;
+            const folderName = identifier;
+            
+            // Required files
+            const artworkFile = document.getElementById('artwork').files[0];
+            const spawnArtFile = document.getElementById('spawn_art').files[0];
+            
+            if (artworkFile) {
+                const artworkData = await readFileAsArrayBuffer(artworkFile);
+                zip.file(`${folderName}/artwork.png`, artworkData);
+            }
+            
+            if (spawnArtFile) {
+                const spawnArtData = await readFileAsArrayBuffer(spawnArtFile);
+                zip.file(`${folderName}/spawn_art.png`, spawnArtData);
+            }
+            
+            // Optional files
+            const healthIconFile = document.getElementById('health_icon').files[0];
+            const attackIconFile = document.getElementById('attack_icon').files[0];
+            
+            if (healthIconFile) {
+                const healthIconData = await readFileAsArrayBuffer(healthIconFile);
+                zip.file(`${folderName}/health.png`, healthIconData);
+            }
+            
+            if (attackIconFile) {
+                const attackIconData = await readFileAsArrayBuffer(attackIconFile);
+                zip.file(`${folderName}/sword.png`, attackIconData);
+            }
+            
+            // Generate zip file
+            const content = await zip.generateAsync({type: "blob"});
+            
+            // Download the zip file
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `${identifier}.zip`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        let bgPickr, borderPickr;
+
+        // Pickr configuration
+        const pickrConfig = {
+            theme: 'classic',
+            components: {
+                preview: true,
+                opacity: true,
+                hue: true,
+                interaction: {
+                    input: true,
+                    clear: true,
+                    save: true
+                }
+            }
+        };
+
+        // Initialize Pickr color pickers
+        document.addEventListener('DOMContentLoaded', () => {
+            // Background color picker
+            bgPickr = Pickr.create({
+                el: '#bg-color-picker',
+                default: 'rgba(34, 177, 76, 1)',
+                ...pickrConfig
+            });
+
+            // Border color picker
+            borderPickr = Pickr.create({
+                el: '#border-color-picker',
+                default: 'rgba(24, 157, 46, 1)',
+                ...pickrConfig
+            });
+        });
+        document.getElementById('identifier').addEventListener('input', validateIdentifier);
+        document.querySelectorAll('.bg-color, .border-color').forEach(input => {
+            input.addEventListener('input', updateColorPreview);
+        });
+
+        // Initialize color previews
+        updateColorPreview();
+    </script>
+</body>
+</html>
