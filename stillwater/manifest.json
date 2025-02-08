@@ -1,0 +1,27 @@
+{
+    "identifier": "stillwater",
+    "name": "Still water",
+    "ability_name": "Those who know 💀 💀 💀 ",
+    "ability_description": "If Still water won't die on first turn, then Still water will drown enemy's chadox",
+    "ability_long_description": "if won't die on first turn deals 99999999999999999 damage (drowns enemy)",
+    "health": 100,
+    "attack": 0,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan(card, mini icon and spawn)",
+    "background_color": [
+        41,
+        136,
+        99,
+        255
+    ],
+    "border_color": [
+        14,
+        84,
+        67,
+        255
+    ],
+    "artwork": "stillwater/artwork.png",
+    "spawn_art": "stillwater/spawn_art.png",
+    "mini_icon": "stillwater/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
