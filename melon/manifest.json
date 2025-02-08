@@ -1,0 +1,27 @@
+{
+    "identifier": "melon",
+    "name": "Watermelon",
+    "ability_name": "Swimming",
+    "ability_description": "Watermelon will avoid next attack and deal 10 damage (usable 2 times)",
+    "ability_long_description": "avoids next attack and deals 10 damage (usable 2 times)",
+    "health": 173,
+    "attack": 37,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
+    "background_color": [
+        119,
+        224,
+        95,
+        255
+    ],
+    "border_color": [
+        15,
+        139,
+        36,
+        255
+    ],
+    "artwork": "melon/artwork.png",
+    "spawn_art": "melon/spawn_art.png",
+    "mini_icon": "melon/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
