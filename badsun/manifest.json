@@ -19,9 +19,9 @@
         21,
         255
     ],
-    "artwork": "sun/artwork.png",
-    "spawn_art": "sun/spawn_art.png",
-    "mini_icon": "sun/mini_icon.png",
+    "artwork": "badsun/artwork.png",
+    "spawn_art": "badsun/spawn_art.png",
+    "mini_icon": "badsun/mini_icon.png",
     "health_icon": 0,
     "attack_icon": 0
 }
