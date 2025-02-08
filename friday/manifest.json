@@ -1,0 +1,27 @@
+{
+    "identifier": "friday",
+    "name": "Friday tomato",
+    "ability_name": "Massacre",
+    "ability_description": "When Friday tomato kills anybody it's boosts his damage by 15%",
+    "ability_long_description": "if Friday tomato kills enemy, then damage boost by 15%",
+    "health": 777,
+    "attack": 112,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni/avi_chan(spawn)",
+    "background_color": [
+        176,
+        11,
+        11,
+        255
+    ],
+    "border_color": [
+        94,
+        14,
+        1,
+        255
+    ],
+    "artwork": "friday/artwork.png",
+    "spawn_art": "friday/spawn_art.png",
+    "mini_icon": "friday/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
