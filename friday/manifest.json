@@ -23,5 +23,10 @@
     "spawn_art": "friday/spawn_art.png",
     "mini_icon": "friday/mini_icon.png",
     "health_icon": 0,
-    "attack_icon": 0
+    "attack_icon": 0,
+    "spawn_conditions": {
+        "days": [
+            5
+        ]
+    }
 }
