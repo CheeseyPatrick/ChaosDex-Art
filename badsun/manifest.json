@@ -1,6 +1,11 @@
 {
     "identifier": "badsun",
     "name": "The bad sun",
+    "alternate_names": [
+        "bad sun",
+        "badsun",
+        "the badsun"
+    ],
     "ability_name": "Deadly rising",
     "ability_description": "When The bad sun enters the battlefield, sun deals 500 damage to EVERYONE every turn until The bad sun dies.",
     "ability_long_description": "Deals 500 damage to everyone but not itself until it dies",
