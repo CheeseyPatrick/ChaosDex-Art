@@ -1,6 +1,9 @@
 {
     "identifier": "orange",
     "name": "Orange",
+    "alternate_names": [
+        "tangerine"
+    ],
     "ability_name": "Touching grass",
     "ability_description": "Orange can touch grass and heal 30 health (usable 3 times)",
     "ability_long_description": "Orange healing with 30 (usable 3 times)",
