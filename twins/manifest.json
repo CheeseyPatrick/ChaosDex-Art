@@ -1,6 +1,18 @@
 {
     "identifier": "twins",
     "name": "Twin Towers",
+    "alternate_names": [
+        "twin towers",
+        "towers",
+        "twintowers",
+        "twintower",
+        "twin tower",
+        "world trade center",
+        "trade center",
+        "world trade",
+        "twins",
+        "twin"
+    ],
     "ability_name": "Average me!",
     "ability_description": "If health is lower than 50%, increases damage by 20%",
     "ability_long_description": "if health lower than 50% increases damage by 20%",
