@@ -2,6 +2,12 @@
     "identifier": "friday",
     "name": "Friday tomato",
     "ability_name": "Massacre",
+    "alternate_names": [
+        "tomato",
+        "tomatoes",
+        "tomatos",
+        "friday"
+    ],
     "ability_description": "When Friday tomato kills anybody it's boosts his damage by 15%",
     "ability_long_description": "if Friday tomato kills enemy, then damage boost by 15%",
     "health": 777,
