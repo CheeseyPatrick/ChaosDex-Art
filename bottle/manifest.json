@@ -7,7 +7,9 @@
         "bottle",
         "bottle of water",
         "bo'oh'o'wa'er",
-        "boohowaer"
+        "boohowaer",
+        "bo'oh'o'wa'eh",
+        "boohowaeh"
     ],
     "ability_name": "Bottle flip",
     "ability_description": "The water bottle makes a backflip and lands on the bottom with 10% chance, dealing 500 damage to the enemy (usable 3 times)",
