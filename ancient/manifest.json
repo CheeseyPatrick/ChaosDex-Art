@@ -2,6 +2,10 @@
     "identifier": "ancient",
     "name": "Ancient balls",
     "ability_name": "Wild hunting",
+    "alternate_names": [
+        "ancient",
+        "ancient ball"
+    ],
     "ability_description": "Ancient balls hunts and eats animal, healing by 20% (usable 2 times)",
     "ability_long_description": "heals by 20% from max health (usable 2 times)",
     "health": 320,
