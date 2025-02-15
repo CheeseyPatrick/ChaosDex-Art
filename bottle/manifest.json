@@ -1,6 +1,14 @@
 {
     "identifier": "bottle",
     "name": "Water bottle",
+    "alternate_names": [
+        "water bottle",
+        "water",
+        "bottle",
+        "bottle of water",
+        "bo'oh'o'wa'er",
+        "boohowaer"
+    ],
     "ability_name": "Bottle flip",
     "ability_description": "The water bottle makes a backflip and lands on the bottom with 10% chance, dealing 500 damage to the enemy (usable 3 times)",
     "ability_long_description": "deals 500 damage with 10% change (usable 3 times)",
