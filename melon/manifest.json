@@ -1,6 +1,11 @@
 {
     "identifier": "melon",
     "name": "Watermelon",
+    "alternate_names": [
+        "melon",
+        "water melon",
+        "watermelon"
+    ],
     "ability_name": "Swimming",
     "ability_description": "Watermelon will avoid next attack and deal 10 damage (usable 2 times)",
     "ability_long_description": "avoids next attack and deals 10 damage (usable 2 times)",
