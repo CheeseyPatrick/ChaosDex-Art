@@ -1,6 +1,9 @@
 {
     "identifier": "apple",
     "name": "Apple",
+    "alternate_names": [
+        "apples"
+    ],
     "ability_name": "Friends forever!",
     "ability_description": "If Banana in your deck, Apple increases both his stats by 40%",
     "ability_long_description": "If Banana in deck, apple increases damage and health by 40% from max stats",
