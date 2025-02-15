@@ -1,0 +1,35 @@
+{
+    "identifier": "snowball",
+    "name": "Snowball",
+    "alternate_names": [
+        "snowman", 
+	"snow man",
+	"snow balls",
+	"snowballs",
+	"snow ball"
+    ],
+    "ability_name": "Surprise!",
+    "ability_description": "When defeated, Snowball splits into his parts\nHead part: 30 health, 14 damage\nBody part: 75 health, 6 damage",
+    "ability_long_description": "When defeated, Snowball splits into his parts\nHead part: 30 health, 14 damage\nBody part: 75 health, 6 damage",
+    "spawn_weight": 5,
+    "health": 105,
+    "attack": 20,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan",
+    "background_color": [
+        221,
+        229,
+        230,
+        255
+    ],
+    "border_color": [
+        139,
+        148,
+        151,
+        255
+    ],
+    "artwork": "snowball/artwork.png",
+    "spawn_art": "snowball/spawn_art.png",
+    "mini_icon": "snowball/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
