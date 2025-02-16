@@ -1,0 +1,32 @@
+{
+    "identifier": "jester",
+    "name": "Jester",
+    "alternate_names": [
+        "joker",
+        "пасхалко"
+    ],
+    "ability_name": "Fool!",
+    "ability_description": "Jester swaps with random chadox for 3 turns (usable 2 times)",
+    "ability_long_description": "spaws with random chadox for 3 turns (usable 2 times)",
+    "spawn_weight": 4,
+    "health": 350,
+    "attack": 65,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan(card art, mini icon), lutiomni(spawn)",
+    "background_color": [
+        254,
+        85,
+        79,
+        255
+    ],
+    "border_color": [
+        195,
+        67,
+        67,
+        255
+    ],
+    "artwork": "jester/artwork.png",
+    "spawn_art": "jester/spawn_art.png",
+    "mini_icon": "jester/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
