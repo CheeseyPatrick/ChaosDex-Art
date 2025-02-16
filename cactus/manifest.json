@@ -1,0 +1,29 @@
+{
+    "identifier": "cactus",
+    "name": "Cactus",
+    "alternate_names": [],
+    "ability_name": "Pain",
+    "ability_description": "Cactus hugs enemy with his spikes, dealing 200 damage (usable 2 times)",
+    "ability_long_description": "deals 200 damage (usable 2 times)",
+    "spawn_weight": 4,
+    "health": 365,
+    "attack": 75,
+    "credits": "Idea by avi_chan\nArtwork by avi_chan",
+    "background_color": [
+        212,
+        210,
+        158,
+        255
+    ],
+    "border_color": [
+        187,
+        176,
+        112,
+        255
+    ],
+    "artwork": "cactus/artwork.png",
+    "spawn_art": "cactus/spawn_art.png",
+    "mini_icon": "cactus/mini_icon.png",
+    "health_icon": 0,
+    "attack_icon": 0
+}
