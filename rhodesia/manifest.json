@@ -7,7 +7,7 @@
   "ability_name": "Recognize Me!",
   "ability_description": "Nobody recognizes Rhodesia. Rhodesia immediatly dies",
   "ability_long_description": "useless",
-  "spawn_weight": 10,
+  "spawn_weight": 1,
   "health": 1,
   "attack": 1300,
   "credits": "Idea by the onewho knocks\nArt by the onewho knocks",
