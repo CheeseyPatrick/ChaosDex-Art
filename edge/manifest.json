@@ -1,0 +1,30 @@
+{
+  "identifier": "edge",
+  "name": "Microsoft Edge",
+  "alternate_names": [
+    "edge",
+    "internet explorer"
+  ],
+  "ability_name": "browser history",
+  "ability_description": "Deals 100 extra damage to p**n addicts",
+  "ability_long_description": "Deals +100 extra damage to: Ancient balls, Cultist, Jester, Watermelon",
+  "spawn_weight": 7,
+  "health": 505,
+  "attack": 140,
+  "credits": "Idea by cheeseypatrick\nArtword by: lutiomni (spawn), ballsexcollector (card)",
+  "background_color": [
+    90,
+    97,
+    215,
+    255
+  ],
+  "border_color": [
+    0,
+    1,
+    137,
+    255
+  ],
+  "artwork": "edge/artwork.png",
+  "spawn_art": "edge/spawn_art.png",
+  "mini_icon": "edge/mini_icon.png"
+}
