@@ -1,0 +1,31 @@
+{
+  "identifier": "wine",
+  "name": "Wine bottle",
+  "alternate_names": [
+    "wine",
+    "bottle of wine"
+  ],
+  "ability_name": "Drunkenness",
+  "ability_description": "The enemy drinks wine and gets drunk, reducing its damage by 10%, and health by 15% (usable 2 times)",
+  "ability_long_description": "Makes that enemy's damage is being reduced by 10%, and health by 15% (usable 2 times) ",
+  "spawn_weight": 7.7,
+  "health": 135,
+  "attack": 65,
+  "credits": "Idea by avi_chan\nArtwork by: avi_chan (spawn), avi_chan (card)",
+  "background_color": [
+    207,
+    126,
+    51,
+    255
+  ],
+  "border_color": [
+    117,
+    81,
+    9,
+    255
+  ],
+  "artwork": "wine/artwork.png",
+  "spawn_art": "wine/spawn_art.png",
+  "mini_icon": "wine/mini_icon.png",
+  "attack_icon": "wine/sword.png"
+}
