@@ -1,31 +1,18 @@
 {
-    "identifier": "ancient",
-    "name": "Ancient balls",
-    "ability_name": "Wild hunting",
-    "alternate_names": [
-        "ancient",
-        "ancient ball"
-    ],
-    "ability_description": "Ancient balls hunts and eats animal, healing by 20% (usable 2 times)",
-    "ability_long_description": "heals by 20% from max health (usable 2 times)",
-    "health": 320,
-    "attack": 28,
-    "credits": "Idea by avi_chan\nArtwork by avi_chan(art and mini icon), lutiomni(spawn)",
-    "background_color": [
-        202,
-        128,
-        21,
-        255
-    ],
-    "border_color": [
-        131,
-        101,
-        11,
-        255
-    ],
-    "artwork": "ancient/artwork.png",
-    "spawn_art": "ancient/spawn_art.png",
-    "mini_icon": "ancient/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "ancient",
+  "name": "Ancient balls",
+  "ability_name": "Wild hunting",
+  "alternate_names": ["ancient", "ancient ball"],
+  "ability_description": "Ancient balls hunts and eats animal, healing by 20% (usable 2 times)",
+  "ability_long_description": "heals by 20% from max health (usable 2 times)",
+  "health": 640640640,
+  "attack": 370,
+  "credits": "Idea by avi_chan\nArtwork by avi_chan(art and mini icon), lutiomni(spawn)",
+  "background_color": [202, 128, 21, 255],
+  "border_color": [131, 101, 11, 255],
+  "artwork": "ancient/artwork.png",
+  "spawn_art": "ancient/spawn_art.png",
+  "mini_icon": "ancient/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

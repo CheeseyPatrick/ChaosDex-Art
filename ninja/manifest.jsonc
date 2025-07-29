@@ -1,28 +1,16 @@
 {
   "identifier": "ninja",
   "name": "Fruit Ninja Curse",
-  "alternate_names": [
-    "Fruit ninja"
-  ],
+  "alternate_names": ["Fruit ninja"],
   "ability_name": "Cursed blade",
   "ability_description": "Any Fruit, Vegetable, Berry or Nut gets extra 170% damaged.",
   "ability_long_description": "Deals extra 170% damage to fruit vegetable berry or nut",
   "spawn_weight": 3.5,
-  "health": 430,
-  "attack": 124,
+  "health": 850,
+  "attack": 930,
   "credits": "Idea by avi_chan\nArtwork by avi_chan",
-  "background_color": [
-    203,
-    176,
-    182,
-    255
-  ],
-  "border_color": [
-    143,
-    129,
-    129,
-    255
-  ],
+  "background_color": [203, 176, 182, 255],
+  "border_color": [143, 129, 129, 255],
   "artwork": "ninja/artwork.png",
   "spawn_art": "ninja/spawn_art.png",
   "mini_icon": "ninja/mini_icon.png"

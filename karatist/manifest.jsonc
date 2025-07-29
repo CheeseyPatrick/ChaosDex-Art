@@ -1,29 +1,16 @@
 {
   "identifier": "karatist",
   "name": "Karatist",
-  "alternate_names": [
-    "karate-man",
-    "karate"
-  ],
+  "alternate_names": ["karate-man", "karate"],
   "ability_name": "Special technique",
   "ability_description": "Karatist deals 50 damage and stuns enemy for 1 turn (usable 2 times)",
   "ability_long_description": "Deals 50 damage, making the enemy unable to attack for 1 turn (usable 2 times)",
   "spawn_weight": 7,
-  "health": 450,
-  "attack": 40,
+  "health": 840,
+  "attack": 413,
   "credits": "Idea by avi_chan\nArtwork by: lutiomni (spawn), avi_chan (card)",
-  "background_color": [
-    235,
-    221,
-    180,
-    255
-  ],
-  "border_color": [
-    165,
-    148,
-    115,
-    255
-  ],
+  "background_color": [235, 221, 180, 255],
+  "border_color": [165, 148, 115, 255],
   "artwork": "karatist/artwork.png",
   "spawn_art": "karatist/spawn_art.png",
   "mini_icon": "karatist/mini_icon.png"

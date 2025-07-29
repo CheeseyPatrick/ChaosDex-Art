@@ -1,30 +1,18 @@
 {
-    "identifier": "orange",
-    "name": "Orange",
-    "alternate_names": [
-        "tangerine"
-    ],
-    "ability_name": "Touching grass",
-    "ability_description": "Orange can touch grass and heal 30 health (usable 3 times)",
-    "ability_long_description": "Orange healing with 30 (usable 3 times)",
-    "health": 253,
-    "attack": 46,
-    "credits": "Idea by Avi_chan\nArtwork by Avi_chan(card and mini icon), lutiomni(spawn)",
-    "background_color": [
-        255,
-        183,
-        25,
-        255
-    ],
-    "border_color": [
-        241,
-        156,
-        22,
-        255
-    ],
-    "artwork": "orange/artwork.png",
-    "spawn_art": "orange/spawn_art.png",
-    "mini_icon": "orange/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "orange",
+  "name": "Orange",
+  "alternate_names": ["tangerine"],
+  "ability_name": "Touching grass",
+  "ability_description": "Orange can touch grass and heal 30 health (usable 3 times)",
+  "ability_long_description": "Orange healing with 30 (usable 3 times)",
+  "health": 280,
+  "attack": 240,
+  "credits": "Idea by Avi_chan\nArtwork by Avi_chan(card and mini icon), lutiomni(spawn)",
+  "background_color": [255, 183, 25, 255],
+  "border_color": [241, 156, 22, 255],
+  "artwork": "orange/artwork.png",
+  "spawn_art": "orange/spawn_art.png",
+  "mini_icon": "orange/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

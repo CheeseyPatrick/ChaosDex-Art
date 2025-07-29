@@ -1,33 +1,19 @@
 {
-    "identifier": "badsun",
-    "name": "The bad sun",
-    "alternate_names": [
-        "bad sun",
-        "badsun",
-        "the badsun"
-    ],
-    "ability_name": "Deadly rising",
-    "ability_description": "When The bad sun enters the battlefield, sun deals 500 damage to EVERYONE every turn until The bad sun dies.",
-    "ability_long_description": "Deals 500 damage to everyone but not itself until it dies",
-    "health": 2000,
-    "attack": 100,
-    "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
-    "background_color": [
-        250,
-        226,
-        59,
-        255
-    ],
-    "border_color": [
-        255,
-        186,
-        21,
-        255
-    ],
-    "artwork": "badsun/artwork.png",
-    "spawn_art": "badsun/spawn_art.png",
-    "mini_icon": "badsun/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0,
-    "spawn_weight": 2
+  "identifier": "badsun",
+  "name": "The bad sun",
+  "alternate_names": ["bad sun", "badsun", "the badsun"],
+  "ability_name": "Deadly rising",
+  "ability_description": "When The bad sun enters the battlefield, sun deals 500 damage to EVERYONE every turn until The bad sun dies.",
+  "ability_long_description": "Deals 500 damage to everyone but not itself until it dies",
+  "health": 2790,
+  "attack": 1560,
+  "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
+  "background_color": [250, 226, 59, 255],
+  "border_color": [255, 186, 21, 255],
+  "artwork": "badsun/artwork.png",
+  "spawn_art": "badsun/spawn_art.png",
+  "mini_icon": "badsun/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0,
+  "spawn_weight": 2
 }

@@ -1,32 +1,19 @@
 {
-    "identifier": "cultist",
-    "name": "Cultist",
-    "alternate_names": [
-        "cultists",
-        "KKK"
-    ],
-    "ability_name": "join us.",
-    "ability_description": "Cultists can recruit random chadox from enemy's deck, making it join your deck with 10% chance (usable 3 times)",
-    "ability_long_description": "Can recruit random chadox from enemy's deck, making it join your deck with 10 percent chance (usable 3 times)",
-    "spawn_weight": 4.5,
-    "health": 870,
-    "attack": 175,
-    "credits": "Created by cheeseypatrick\nArtwork author: lutiomni (spawn), avi_chan (card)",
-    "background_color": [
-        251,
-        7,
-        7,
-        255
-    ],
-    "border_color": [
-        143,
-        20,
-        20,
-        255
-    ],
-    "artwork": "cultist/artwork.png",
-    "spawn_art": "cultist/spawn_art.png",
-    "mini_icon": "cultist/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "cultist",
+  "name": "Cultist",
+  "alternate_names": ["cultists", "KKK"],
+  "ability_name": "join us.",
+  "ability_description": "Cultists can recruit random chadox from enemy's deck, making it join your deck with 10% chance (usable 3 times)",
+  "ability_long_description": "Can recruit random chadox from enemy's deck, making it join your deck with 10 percent chance (usable 3 times)",
+  "spawn_weight": 4.5,
+  "health": 1573,
+  "attack": 760,
+  "credits": "Created by cheeseypatrick\nArtwork author: lutiomni (spawn), avi_chan (card)",
+  "background_color": [251, 7, 7, 255],
+  "border_color": [143, 20, 20, 255],
+  "artwork": "cultist/artwork.png",
+  "spawn_art": "cultist/spawn_art.png",
+  "mini_icon": "cultist/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

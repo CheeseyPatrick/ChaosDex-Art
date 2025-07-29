@@ -1,36 +1,26 @@
 {
-    "identifier": "ice",
-    "name": "Ice Cube",
-    "alternate_names": [
-        "ice cube",
-        "ice block",
-        "ice",
-        "icecube",
-        "U.S. Immigration and Customs Enforcement",
-        "It Was a Good Day"
-    ],
-    "ability_name": "Ice ice baby",
-    "ability_description": "Ice block freezes enemy, and its damage is reduced by 5%, taken damage increases by 50% for 3 turns, stuns enemy for 1 turn (usable 1 time)",
-    "ability_long_description": "Ice block freezes enemy, and enemys damage is reduced by 5%, taken damage increases by 50% for 3 turns, stuns enemy for 1 turn (usable only once)",
-    "spawn_weight": 6.2,
-    "health": 360,
-    "attack": 70,
-    "credits": "Created by cheeseypatrick\nArtwork author: lutiomni (spawn), avi_chan (card)",
-    "background_color": [
-        127,
-        249,
-        255,
-        255
-    ],
-    "border_color": [
-        93,
-        184,
-        189,
-        255
-    ],
-    "artwork": "ice/artwork.png",
-    "spawn_art": "ice/spawn_art.png",
-    "mini_icon": "ice/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "ice",
+  "name": "Ice Cube",
+  "alternate_names": [
+    "ice cube",
+    "ice block",
+    "ice",
+    "icecube",
+    "U.S. Immigration and Customs Enforcement",
+    "It Was a Good Day"
+  ],
+  "ability_name": "Ice ice baby",
+  "ability_description": "Ice block freezes enemy, and its damage is reduced by 5%, taken damage increases by 50% for 3 turns, stuns enemy for 1 turn (usable 1 time)",
+  "ability_long_description": "Ice block freezes enemy, and enemys damage is reduced by 5%, taken damage increases by 50% for 3 turns, stuns enemy for 1 turn (usable only once)",
+  "spawn_weight": 6.2,
+  "health": 595,
+  "attack": 394,
+  "credits": "Created by cheeseypatrick\nArtwork author: lutiomni (spawn), avi_chan (card)",
+  "background_color": [127, 249, 255, 255],
+  "border_color": [93, 184, 189, 255],
+  "artwork": "ice/artwork.png",
+  "spawn_art": "ice/spawn_art.png",
+  "mini_icon": "ice/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

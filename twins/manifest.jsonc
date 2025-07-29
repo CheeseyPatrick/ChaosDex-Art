@@ -1,39 +1,29 @@
 {
-    "identifier": "twins",
-    "name": "Twin Towers",
-    "alternate_names": [
-        "twin towers",
-        "towers",
-        "twintowers",
-        "twintower",
-        "twin tower",
-        "world trade center",
-        "trade center",
-        "world trade",
-        "twins",
-        "twin"
-    ],
-    "ability_name": "Average me!",
-    "ability_description": "If health is lower than 50%, increases damage by 20%",
-    "ability_long_description": "if health lower than 50% increases damage by 20%",
-    "health": 750,
-    "attack": 30,
-    "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
-    "background_color": [
-        220,
-        220,
-        220,
-        255
-    ],
-    "border_color": [
-        148,
-        149,
-        148,
-        255
-    ],
-    "artwork": "twins/artwork.png",
-    "spawn_art": "twins/spawn_art.png",
-    "mini_icon": "twins/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "twins",
+  "name": "Twin Towers",
+  "alternate_names": [
+    "twin towers",
+    "towers",
+    "twintowers",
+    "twintower",
+    "twin tower",
+    "world trade center",
+    "trade center",
+    "world trade",
+    "twins",
+    "twin"
+  ],
+  "ability_name": "Average me!",
+  "ability_description": "If health is lower than 50%, increases damage by 20%",
+  "ability_long_description": "if health lower than 50% increases damage by 20%",
+  "health": 1941,
+  "attack": 325,
+  "credits": "Idea by avi_chan\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
+  "background_color": [220, 220, 220, 255],
+  "border_color": [148, 149, 148, 255],
+  "artwork": "twins/artwork.png",
+  "spawn_art": "twins/spawn_art.png",
+  "mini_icon": "twins/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

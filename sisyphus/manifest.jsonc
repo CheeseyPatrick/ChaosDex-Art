@@ -1,29 +1,16 @@
 {
   "identifier": "sisyphus",
   "name": "Sisyphus",
-  "alternate_names": [
-    "Sisyphus",
-    "Sisyphus prime"
-  ],
+  "alternate_names": ["Sisyphus", "Sisyphus prime"],
   "ability_name": "You can't escape!",
   "ability_description": "When Sisyphus ball is dieing, his boulder falls down on enemy, dealing 800 damage",
   "ability_long_description": "When Sisyphus ball defeated, deal 800 damage to the enemy",
   "spawn_weight": 2.5,
   "health": 2850,
-  "attack": 165,
+  "attack": 999,
   "credits": "Idea by avi_chan\nArtwork by avi_chan",
-  "background_color": [
-    237,
-    236,
-    161,
-    255
-  ],
-  "border_color": [
-    205,
-    202,
-    149,
-    255
-  ],
+  "background_color": [237, 236, 161, 255],
+  "border_color": [205, 202, 149, 255],
   "artwork": "sisyphus/artwork.png",
   "spawn_art": "sisyphus/spawn_art.png",
   "mini_icon": "sisyphus/mini_icon.png"

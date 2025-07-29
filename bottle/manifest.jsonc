@@ -1,37 +1,27 @@
 {
-    "identifier": "bottle",
-    "name": "Water bottle",
-    "alternate_names": [
-        "water bottle",
-        "water",
-        "bottle",
-        "bottle of water",
-        "bo'oh'o'wa'er",
-        "boohowaer",
-        "bo'oh'o'wa'eh",
-        "boohowaeh"
-    ],
-    "ability_name": "Bottle flip",
-    "ability_description": "The water bottle makes a backflip and lands on the bottom with 10% chance, dealing 500 damage to the enemy (usable 3 times)",
-    "ability_long_description": "deals 500 damage with 10% change (usable 3 times)",
-    "health": 85,
-    "attack": 30,
-    "credits": "Idea by lutiomni\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
-    "background_color": [
-        66,
-        222,
-        255,
-        255
-    ],
-    "border_color": [
-        25,
-        169,
-        225,
-        255
-    ],
-    "artwork": "bottle/artwork.png",
-    "spawn_art": "bottle/spawn_art.png",
-    "mini_icon": "bottle/mini_icon.png",
-    "health_icon": 0,
-    "attack_icon": 0
+  "identifier": "bottle",
+  "name": "Water bottle",
+  "alternate_names": [
+    "water bottle",
+    "water",
+    "bottle",
+    "bottle of water",
+    "bo'oh'o'wa'er",
+    "boohowaer",
+    "bo'oh'o'wa'eh",
+    "boohowaeh"
+  ],
+  "ability_name": "Bottle flip",
+  "ability_description": "The water bottle makes a backflip and lands on the bottom with 10% chance, dealing 500 damage to the enemy (usable 3 times)",
+  "ability_long_description": "deals 500 damage with 10% change (usable 3 times)",
+  "health": 208,
+  "attack": 280,
+  "credits": "Idea by lutiomni\nArtwork by avi_chan(card and mini icon), lutiomni(spawn)",
+  "background_color": [66, 222, 255, 255],
+  "border_color": [25, 169, 225, 255],
+  "artwork": "bottle/artwork.png",
+  "spawn_art": "bottle/spawn_art.png",
+  "mini_icon": "bottle/mini_icon.png",
+  "health_icon": 0,
+  "attack_icon": 0
 }

@@ -1,28 +1,16 @@
 {
   "identifier": "brace",
   "name": "Curly brace",
-  "alternate_names": [
-    "brace"
-  ],
+  "alternate_names": ["brace"],
   "ability_name": "Try to draw it",
   "ability_description": "Curly brace forces enemy to draw it, and if it failed, deals 100 damage to enemy (35% succesful draw chance) (usable 2 times)",
   "ability_long_description": "deals 100 damage to enemy with 65%",
   "spawn_weight": 5,
-  "health": 457,
-  "attack": 60,
+  "health": 583,
+  "attack": 402,
   "credits": "Idea by avi_chan\nArtwork by avi_chan(card art and mini icon), lutiomni(spawn)",
-  "background_color": [
-    232,
-    192,
-    249,
-    255
-  ],
-  "border_color": [
-    187,
-    101,
-    199,
-    255
-  ],
+  "background_color": [232, 192, 249, 255],
+  "border_color": [187, 101, 199, 255],
   "artwork": "brace/artwork.png",
   "spawn_art": "brace/spawn_art.png",
   "mini_icon": "brace/mini_icon.png"
